@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--div-main-color);
+    background-color: black;
+
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+    color: var(--div-main-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--div-main-color);
+}
+
+:root{
+    --div-main-color: #ffffff;
+}
+
+/*header-----------------------------------------------*/
+header{
+    max-width: 1440px;
+    font-size: 16px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto 140px auto;
+ 
+}
+
+.logo{
+    flex: 1 0 0;
+}
+.logo{
+    width: 120px;
+    height: auto;
+}
+
+
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav_list li:nth-child(2){
+    margin: 0 28px;
+}
+
+
+.icon_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 0 ;
+}
+.icon_list img:nth-child(2){
+    margin: 0 32px;
+}
+.Icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/*main-----------------------------------------------*/
+
+main{
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    scroll-behavior: smooth;
+    animation-duration: 1;
+
+    overflow: hidden;
+}
+.product_box{
+    font-size: 70px;
+    line-height: 95px;
+
+    width: 1250px;
+    height: 650px;
+    margin-right: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    transition: 0.5s ease-in;
+
+}
+main .text{
+    width: 726px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.pro_img img{
+   
+    height: 650px;
+    width: auto;
+}
+
+.to_recipe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.to_recipe img{
+    margin-left: 20px;
+    width: auto;
+    height: 40px;
+}
+.name, .to_recipe{
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+.explain{
+    font-weight: 900;
+    letter-spacing: -8px;
+    color: #000000;
+    line-height: 72PX;
+    margin: 10PX 0;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+.stroke{
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}

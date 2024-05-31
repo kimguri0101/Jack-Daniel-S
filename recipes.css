@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--div-main-color);
+    background-color: black;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+    color: var(--div-main-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--div-main-color);
+}
+:root{
+    --div-main-color: #ffffff;
+}
+@media screen and (max-width: 1440px) {
+    header{
+        
+    }
+}
+h1{
+    font-size: 40px;
+}
+/*header-----------------------------------------------*/
+header{
+    font-size: 16px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto 140px auto;
+ 
+}
+
+.logo{
+    flex: 1 0 0;
+}
+.logo{
+    width: 120px;
+    height: auto;
+}
+
+
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav_list li:nth-child(2){
+    margin: 0 28px;
+}
+
+
+.icon_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 0 ;
+}
+.icon_list img:nth-child(2){
+    margin: 0 32px;
+}
+.Icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/*main-----------------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin-bottom: 20px;
+    color: #E0E0E0;
+}
+.list{
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 4px solid #ffffff;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+}
+.box.show{
+    opacity: 1;
+}
+
+
+.box img{
+    height: 30px;
+    width: auto;
+    padding-top: 10px;
+}
+.name{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.image{
+    width: 240px;
+    height: 390px;
+    margin-right: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: auto;
+    height: 380px;
+}
+.sour{
+    height:330px;
+}
+.drink{
+    display: none;
+    
+}
+.drink.show{
+    display: flex;
+overflow: hidden;
+    flex-direction: row;
+    align-items: end;
+    margin-top: 30px;
+ 
+}
+
+.four .image{
+    position: relative;
+}
+.four .image:nth-child(2) img{
+    position: absolute;
+    top: -50px;
+}
+.four .image:nth-child(3) img{
+    position: absolute;
+    top: -20px;
+}
